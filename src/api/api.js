@@ -111,6 +111,11 @@ export const formatNumber = (value) => {
   }
 };
 
+export const getModelParameters = async (modelType) => {
+  const response = await fetch(`${API_BASE_URL}/model-parameters/${modelType}`);
+  return handleResponse(response);
+};
+
 export const calculateMetrics = (actual, predicted) => {
   if (!actual || !predicted || actual.length !== predicted.length) {
     return null;
@@ -135,4 +140,5 @@ export const calculateMetrics = (actual, predicted) => {
     rmse,
     mae
   };
+
 };
