@@ -34,11 +34,12 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-amber-700 mt-8 pt-8 text-center text-amber-300">
-          <p>&copy; 2024 Macro Forecasting Pro. Développé avec <i className="fas fa-heart text-red-400 mx-1"></i> par Ramanambonona.</p>
+          <p>&copy; 2025 Forecasting Tools. Ramanambonona Ambinintsoa.</p>
         </div>
       </div>
     </footer>
   );
 };
+
 
 export default Footer;
