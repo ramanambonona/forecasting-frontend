@@ -32,7 +32,7 @@ const Navbar = ({ activeTab, setActiveTab, backendStatus }) => {
             <i className="fas fa-chart-line text-white"></i>
           </div>
           <div>
-            <h1 className="text-2xl font-bold text-amber-900">Macro Forecasting Pro</h1>
+            <h1 className="text-2xl font-bold text-amber-900">Forecasting Tools</h1>
             <div className="flex items-center space-x-2 text-sm">
               <div className={`flex items-center space-x-1 ${getStatusColor()}`}>
                 <i className="fas fa-circle text-xs"></i>
@@ -74,5 +74,6 @@ const Navbar = ({ activeTab, setActiveTab, backendStatus }) => {
     </nav>
   );
 };
+
 
 export default Navbar;
