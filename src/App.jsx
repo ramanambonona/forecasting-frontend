@@ -15,18 +15,21 @@ function App() {
     checkBackendStatus()
   }, [])
 
-  const checkBackendStatus = async () => {
-    try {
-      const response = await fetch('http://localhost:8000/api/health')
-      if (response.ok) {
-        setBackendStatus('connected')
-      } else {
-        setBackendStatus('error')
-      }
-    } catch (error) {
+const checkBackendStatus = async () => {
+  const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://localhost:8000/api'
+  const healthUrl = `${apiBaseUrl}/health`
+  
+  try {
+    const response = await fetch(healthUrl)
+    if (response.ok) {
+      setBackendStatus('connected')
+    } else {
       setBackendStatus('error')
     }
+  } catch (error) {
+    setBackendStatus('error')
   }
+}
 
   const renderContent = () => {
     switch (activeTab) {
@@ -61,5 +64,6 @@ function App() {
     </DataProvider>
   )
 }
+
 
 export default App
