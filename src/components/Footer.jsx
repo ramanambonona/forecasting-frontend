@@ -13,7 +13,7 @@ const Footer = () => {
               <h2 className="text-2xl font-bold">Forecasting Tools</h2>
             </div>
             <p className="text-amber-200 max-w-md">
-              Plateforme avancée d'analyse et de prévision macroéconomique utilisant l'intelligence artificielle et le machine learning.
+              Plateforme avancée d'analyse et de prévision utilisant les modèles de prévisions classiques et l'intelligence artificielle et le machine learning.
             </p>
           </div>
           
@@ -43,4 +43,5 @@ const Footer = () => {
 
 
 export default Footer;
+
 
