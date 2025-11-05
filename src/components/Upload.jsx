@@ -69,7 +69,7 @@ const Upload = () => {
           <i className="fas fa-upload mr-3"></i>Upload des Données
         </h1>
         <p className="text-amber-700 mb-6">
-          Importez vos données macroéconomiques pour analyse et prévision
+          Uploadez vos données pour analyse et prévision
         </p>
         
         {/* Zone de dépôt de fichier */}
@@ -160,5 +160,6 @@ const Upload = () => {
     </div>
   );
 };
+
 
 export default Upload;
