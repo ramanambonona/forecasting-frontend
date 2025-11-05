@@ -10,7 +10,7 @@ const Footer = () => {
               <div className="w-10 h-10 bg-white rounded-xl flex items-center justify-center">
                 <i className="fas fa-chart-line text-amber-700 text-xl"></i>
               </div>
-              <h2 className="text-2xl font-bold">Macro Forecasting Pro</h2>
+              <h2 className="text-2xl font-bold">Forecasting Tools</h2>
             </div>
             <p className="text-amber-200 max-w-md">
               Plateforme avancée d'analyse et de prévision macroéconomique utilisant l'intelligence artificielle et le machine learning.
@@ -43,3 +43,4 @@ const Footer = () => {
 
 
 export default Footer;
+
