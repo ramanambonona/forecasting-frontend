@@ -4,6 +4,7 @@
 
 @layer base {
   html {
+    /* Garder la police Palatino */
     font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
   }
 }
@@ -16,12 +17,12 @@
   }
   
   .gradient-bg {
-    background: linear-gradient(135deg, #8FBC8F 0%, #6A8A6A 50%, #556B2F 100%);
+    background: linear-gradient(135deg, #A0522D 0%, #7B3F00 50%, #4B3621 100%);
   }
   
   .loading-spinner {
     border: 3px solid #f3f3f3;
-    border-top: 3px solid #d97706;
+    border-top: 3px solid #7B3F00; 
     border-radius: 50%;
     width: 24px;
     height: 24px;
@@ -49,7 +50,6 @@
   100% { transform: rotate(360deg); }
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .mobile-stack {
     flex-direction: column;
@@ -64,7 +64,6 @@
   }
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -75,10 +74,10 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #d97706;
+  background: #7B3F00; /* Chocolat */
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #b45309;
+  background: #4B3621; /* Marron très foncé */
 }
